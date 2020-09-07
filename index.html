@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic Details Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="form_filed">
+		<h1>REGISTRATION DETAILS</h1>
+		<form class="form_details">
+			<fieldset class="fieldset1">
+				<legend>
+					Personal Detailes : 
+				</legend>
+				<label for="name">Full Name</label><input type="text" name="name" id="name" required></br>
+				<label for="dob">Date of birth</label><input type="date" name="dob" id="dob" required></br>
+				<label for="email">Enter your email</label><input type="email" name="email" id="email" pattern = "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" required></br>
+				<label for="contact">Phone number</label><input type="tel" name="contant" id="contact" maxlength="10" required></br>
+				<label for="gender">Gender</label></br>
+				<input type="radio" name="gender" id="gender" value="male" required>Male
+				<input type="radio" name="gender" id="gender" value="female" required>Female
+				<input type="radio" name="gender" id="gender" value="other" required>Other</br>
+			</fieldset>
+
+			<fieldset class="fieldset2">
+				<legend>
+					Address Details : 
+				</legend>
+				<h4>Permanent Address</h4>
+				<label for="address">Address</label><textarea id="address" name="address" rows="4" cols="50"></textarea></br>
+				<label for="state">State</label><input list="states" name="state" id="state" required></br>
+				<datalist id="states">
+					<option value="Andhra Pradesh">Andhra Pradesh</option>
+					<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+					<option value="Assam">Assam</option>
+					<option value="Bihar">Bihar</option>
+					<option value="Chhattisgarh">Chhattisgarh</option>
+					<option value="Goa">Goa</option>
+					<option value="Gujarat">Gujarat</option>
+					<option value="Haryana">Haryana</option>
+					<option value="Gujarat">Gujarat</option>
+					<option value="Himachal Pradesh">Himachal Pradesh</option>
+					<option value="Madhya Pradesh">Madhya Pradesh</option>
+					<option value="Haryana">Haryana</option>
+					<option value="Punjab">Punjab</option>
+					<option value="Uttar pradesh">Uttar pradesh</option>
+					<option value="Uttarakhand">Uttarakhand</option>
+				</datalist>
+				<label for="city">City</label><input list="cities" name="city" id="city" required></br>
+				<datalist id="cities">
+					<option value="Lucknow">Lucknow</option>
+					<option value="Kanpur">Kanpur</option>
+					<option value="Assam">Assam</option>
+					<option value="Ghaziabad">Ghaziabad</option>
+					<option value="Agra">Agra</option>
+					<option value="Meerut">Meerut</option>
+					<option value="Varanasi">Varanasi</option>
+					<option value="Moradabad">Moradabad</option>
+				</datalist>
+				<label for="pincode">Pincode</label><input type="number" id="pincode" name="pincode" maxlength="4"required></br>
+				<label for="country">Country</label><input type="text" id="country" name="country" required></br>
+			</fieldset>
+			<fieldset class="fieldset3">
+				<legend>
+					Educational Details : 
+				</legend>
+				<h3>Post Graduation</h3>
+				<label for="p_collegeName">College/University Name</label><input type="text" name="p_collegeName" id="p_collegeName" required>
+				<label for="p_stream">Specification</label><input type="text" name="p_stream" id="p_stream" required>
+				<label for="p_percentage">Percentage</label><input type="text" pattarn="[0-9]" name="p_percentage" id="p_percentage" required>%
+				<h3>Graduation</h3>
+				<label for="g_collegeName">College/University Name</label><input type="text" name="g_collegeName" id="g_collegeName" required>
+				<label for="g_stream">Specification</label><input type="text" name="g_stream" id="g_stream" required>
+				<label for="g_percentage">Percentage</label><input type="text" pattarn="[0-9]" name="g_percentage" id="g_percentage" required>%
+				<h3>Intermediate</h3>
+				<label for="i_collegeName">College/University Name</label><input type="text" name="i_collegeName" id="i_collegeName" required>
+				<label for="i_stream">Specification</label><input type="text" name="i_stream" id="i_stream" required>
+				<label for="i_percentage">Percentage</label><input type="text" pattarn="[0-9]" name="i_percentage" id="i_percentage" required>%
+				<h3>Highs school</h3>
+				<label for="H_collegeName">College/University Name</label><input type="text" name="H_collegeName" id="H_collegeName" required>
+				<label for="H_stream">Specification</label><input type="text" name="H_stream" id="H_stream" required>
+				<label for="H_percentage">Percentage</label><input type="text" pattarn="[0-9]" name="H_percentage" id="H_percentage" required>%
+			</fieldset>
+			<fieldset class="fieldset4">
+				<legend>
+					Additional Details : 
+				</legend>
+				<label for="language">Laguage you know</label>
+				<input type="checkbox" name="language" value="Hindi">Hindi
+				<input type="checkbox" name="language" value="English">English
+				<input type="checkbox" name="language" value="Spanish">Spanish<br><br/>
+				<label for="skill">Skills you have</label>
+				<input type="text" name="skill">
+			</fieldset>
+			<br/>
+			<input type="submit" name="submit" id="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>

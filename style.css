@@ -1,0 +1,14 @@
+*{margin:0px;padding:0px;background-color: #464646;color:#fff;}
+h1{max-width: 590px;text-align: center;color: #fff;font-size: 48px;padding-bottom: 21px;border: none;border-bottom: 2px;border-bottom-color: #fff;border-bottom-style: dashed;border-width: 2px;margin: 0px auto;border-radius: 23%;border-top: 2px;border-top-color: #fff;border-top-style: dashed;padding-top: 21px;margin-top: 20px;text-shadow: 2px 2px 2px #ff0000, -2px -2px 4px #00BCD4, 4px 4px 4px #41b946;}
+.form_filed{padding: 20px 20px;}
+.form_details{display:flex;flex-wrap:wrap;padding-top:20px;}
+.form_filed fieldset{display: flex;border-color: #fff;padding: 21px;border-style: groove;margin: 0px auto;padding-top: 20px;}
+.form_filed fieldset legend{color: #fff;font-size: 23px;text-transform: uppercase;padding: 0px 11px;}
+.form_filed fieldset label{color: #fff;padding-right: 10px;font-size: 17px;}
+.form_filed fieldset input,.form_filed fieldset textarea{width:97%;color: #fff;padding: 10px;font-size: 17px;}
+.form_filed fieldset input[type="radio"]{color:#fff;font-size: 17px;}
+h4,h3{font-size: 20px;padding-bottom: 25px;text-decoration: underline;}
+h3{padding-top:20px;}
+.fieldset1,.fieldset2{width:46%;}
+.fieldset3,.fieldset4{width:100%;}
+.form_filed input[type="submit"]{width: 200px;background: #eaeaea;padding: 10px;border: none;margin: 0px auto;color: #000;font-size: 20px;font-weight: 700;border: 3px solid #000;border-radius: 4px;margin-top: 32px;}
